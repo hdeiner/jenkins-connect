@@ -1,6 +1,3 @@
-import java.io.IOException;
-import java.net.URI;
-
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
 import org.apache.http.auth.AuthScope;
@@ -17,7 +14,10 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-public class main {
+import java.io.IOException;
+import java.net.URI;
+
+public class JenkinsScraper {
 
     public String scrape(String urlString, String username, String password) throws ClientProtocolException, IOException {
         URI uri = URI.create(urlString);
